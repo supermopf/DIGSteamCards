@@ -7,6 +7,7 @@
 // @updateURL    https://github.com/supermopf/DIGSteamCards/raw/main/DIGSteamCards.user.js
 // @downloadURL  https://github.com/supermopf/DIGSteamCards/raw/main/DIGSteamCards.user.js
 // @match        https://dailyindiegame.com/site_weeklybundle*
+// @match        https://www.dailyindiegame.com/site_weeklybundle*
 // @icon         https://www.google.com/s2/favicons?domain=dailyindiegame.com
 // @require      http://code.jquery.com/jquery-3.4.1.min.js
 // @grant        none
