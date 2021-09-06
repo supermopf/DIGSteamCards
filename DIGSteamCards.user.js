@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Show Steam Cards for DIG Game Bundles
 // @namespace    https://victor-lange.de/
-// @version      1.0
+// @version      1.1
 // @description  Shows a Emoji depending on Cards Status and Region Lock
 // @author       Victor Lange
 // @updateURL    https://github.com/supermopf/DIGSteamCards/raw/main/DIGSteamCards.user.js
@@ -9,8 +9,8 @@
 // @match        https://dailyindiegame.com/site_weeklybundle*
 // @match        https://www.dailyindiegame.com/site_weeklybundle*
 // @icon         https://www.google.com/s2/favicons?domain=dailyindiegame.com
-// @require      http://code.jquery.com/jquery-3.4.1.min.js
-// @grant        none
+// @grant        GM.xmlHttpRequest
+// @connect      store.steampowered.com
 // ==/UserScript==
 
 (function() {
@@ -31,11 +31,11 @@
 
     function UpdateGameBySteamAppDetails(id,htmlobj)
     {
-        $.ajax ( {
-            type:       'GET',
-            url:        'https://store.steampowered.com/api/appdetails?appids=' + id,
-            dataType:   'JSON',
-            success:    function (apiJson) {
+        GM.xmlHttpRequest({
+            method: "GET",
+            url: 'https://store.steampowered.com/api/appdetails?appids=' + id,
+            onload: function(response) {
+                var apiJson = JSON.parse(response.response)
                 if(apiJson[id].success){
                     var bhasCards = false;
                     for (const [key, value] of Object.entries(apiJson[id].data.categories)) {
@@ -55,8 +55,7 @@
                     htmlobj.innerText = htmlobj.innerText + "🚧"
                 }
             }
-        } );
-
+        });
     }
 
     GetAllBundleGames()
