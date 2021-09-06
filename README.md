@@ -2,6 +2,8 @@
 
 A Userscript for checking if a weekly bundle has Steam Trading Cards or not. 
 
+![Userscript Demo](/imag/demo1.png?raw=true "Demo")
+
 # Installation
 
 Make sure to install a userscript engine like [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) or [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo).
