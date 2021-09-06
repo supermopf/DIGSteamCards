@@ -4,8 +4,8 @@
 // @version      1.0
 // @description  Shows a Emoji depending on Cards Status and Region Lock
 // @author       Victor Lange
-// @updateURL    https://github.com/supermopf/DIGSteamCards/raw/master/DIGSteamCards.user.js
-// @downloadURL  https://github.com/supermopf/DIGSteamCards/raw/master/DIGSteamCards.user.js
+// @updateURL    https://github.com/supermopf/DIGSteamCards/raw/main/DIGSteamCards.user.js
+// @downloadURL  https://github.com/supermopf/DIGSteamCards/raw/main/DIGSteamCards.user.js
 // @match        https://dailyindiegame.com/site_weeklybundle*
 // @icon         https://www.google.com/s2/favicons?domain=dailyindiegame.com
 // @require      http://code.jquery.com/jquery-3.4.1.min.js

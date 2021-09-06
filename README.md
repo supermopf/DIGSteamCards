@@ -6,7 +6,7 @@ A Userscript for checking if a weekly bundle has Steam Trading Cards or not.
 
 Make sure to install a userscript engine like [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) or [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo).
 
-Install "DIGSteamCards" by clicking here: [install](https://github.com/supermopf/DIGSteamCards/raw/master/DIGSteamCards.user.js).
+Install "DIGSteamCards" by clicking here: [install](https://github.com/supermopf/DIGSteamCards/raw/main/DIGSteamCards.user.js).
 
 # Icons
 
