@@ -2,7 +2,7 @@
 
 A Userscript for checking if a weekly bundle has Steam Trading Cards or not. 
 
-![Userscript Demo](/imag/demo1.png?raw=true "Demo")
+![Userscript Demo](/img/demo1.png?raw=true "Demo")
 
 # Installation
 
