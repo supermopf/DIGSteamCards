@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Show Steam Cards for DIG Game Bundles
 // @namespace    https://victor-lange.de/
-// @version      1.1
+// @version      1.1.1
 // @description  Shows a Emoji depending on Cards Status and Region Lock
 // @author       Victor Lange
 // @updateURL    https://github.com/supermopf/DIGSteamCards/raw/main/DIGSteamCards.user.js
@@ -23,9 +23,8 @@
     function GetAllBundleGames(){
         var games = getElementByXpath("/html/body/table/tbody/tr[2]/td/table[1]/tbody/tr/td/table/tbody/tr/td[2]/table[2]/tbody").getElementsByTagName("td")
         for (const [key, value] of Object.entries(games)) {
-            var sAppID = value.children[2].href.replace("https://store.steampowered.com/app/","")
-
-            UpdateGameBySteamAppDetails(sAppID, value.children[2].children[0])
+            var sAppID = value.getElementsByTagName("a")[0].href.replace("https://store.steampowered.com/app/","")
+            UpdateGameBySteamAppDetails(sAppID, value.getElementsByTagName("a")[0].children[0])
         }
     }
 
